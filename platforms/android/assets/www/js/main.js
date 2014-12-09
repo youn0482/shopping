@@ -28,10 +28,13 @@ document.addEventListener("DOMContentLoaded", function(ev){
   });
     
     document.querySelector("#btnClear").addEventListener("click", function(ev){
-        
-        localStorage.clear();
+        if (confirm("Clear your list?")) {
+        // your deletion code
+            localStorage.clear();
         
         showList();
+        }
+        
         return false;
   });
   
@@ -43,16 +46,20 @@ function removeItem(ev){
   //this.firstChild.nodeValue
   //ev.currentTarget.firstChild - the textNode inside the paragraph
   //ev.currentTarget.firstChild.nodeValue - the text inside the textNode
-  var txt = ev.currentTarget.previousSibling.firstChild.nodeValue;
-
-  for(var i=0;i<myList.length;i++){
+    var txt = ev.currentTarget.previousSibling.firstChild.nodeValue;
+    var output = document.querySelector(".output");
+    var dRay = output.childNodes;
+    console.log(dRay);
+    for(var i=0;i<myList.length;i++){
   	if(myList[i] == txt){
       //found the match
       myList.splice(i, 1);
+     output.removeChild(dRay[i]);
+        
     }
   }
   localStorage.setItem("groceryList", JSON.stringify(myList) );
-  showList();
+  
 }
 
 function gotItem(ev){
@@ -73,7 +80,7 @@ function showList(){
         
         var p = document.createElement("p");
         p.innerHTML = myList[i];
-        var gone = document.createElement("button");
+        var gone = document.createElement("div"); 
         gone.className = "delete";
         
         listDiv.appendChild(p);

@@ -24,10 +24,11 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href='http://fonts.googleapis.com/css?family=Lobster|Indie+Flower' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <title>Grocery Pal</title>
-        <link href='http://fonts.googleapis.com/css?family=Lobster|Indie+Flower' rel='stylesheet' type='text/css'>
-         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+         <script src="js/jquery-2.1.1.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -37,14 +38,14 @@
         </div>
         
     
-        <footer class="sticky">
+        <div class="sticky">
    
             <form id="formy" name="myForm">
-              <input type="text" name="item" id="item" placeholder="new item"/>
+              <input type="text" name="item" id="item" maxlength="20" placeholder="new item"/>
               <button id="btnAdd">Add</button>
                 <button id="btnClear"></button>
             </form>
-        </footer>
+        </div>
     
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/main.js"></script>

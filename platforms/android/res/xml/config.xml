@@ -4,7 +4,7 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>Shopping</name>
+    <name>youn0482-Shopping</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
