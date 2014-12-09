@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(ev){
 //execute the show list function.
   showList();
   
-//
+//add itme button 
   document.querySelector("#btnAdd").addEventListener("click", function(ev){
     ev.preventDefault();
     var newItem = document.querySelector("#item").value;
@@ -58,8 +58,8 @@ function removeItem(ev){
         
     }
   }
+    
   localStorage.setItem("groceryList", JSON.stringify(myList) );
-  
 }
 
 function gotItem(ev){

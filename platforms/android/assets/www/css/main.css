@@ -7,14 +7,15 @@ html, body {
     background-color: #E1FFE2;
 }
 
+
 h1{
-    font-family: 'Indie Flower', 'Comic Sans MS', 'Monotype Corsiva', cursive;
+    font-family:'architects_daughterregular', cursive;
     padding: 15px 0 15px 5px;
     text-align: center;
     font-size:2.33rem;
 }
 p{
-    font-family: 'Indie Flower', 'Comic Sans MS', 'Monotype Corsiva', cursive;
+    font-family: 'architects_daughterregular', cursive;
     width: 95%; 
     padding-left: 5px;
     font-size: 1.5rem; 
@@ -71,15 +72,16 @@ p{
 
 #item{
     width:60%;
-    margin:30px 10px 30px;
-    
-    font-size: 2rem;
+    margin:25px 10px 30px;
+    font-size: 1.5rem;
     text-indent:5px;
+    font-family: 'architects_daughterregular', cursive;
 }
 #btnAdd{
-    font-size:2rem;
+    font-size:1.5rem;
     width: 20%;
     background-color: #FBFFFB;
+    font-family: 'architects_daughterregular', cursive;
 }
 
 
@@ -99,5 +101,17 @@ p{
     background: url(../img/trash2.svg) no-repeat center center;
     background-size:contain;
 }
+/****FONT*****/
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('../fonts/architectsdaughter-webfont.eot');
+    src: url('../fonts/architectsdaughter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/architectsdaughter-webfont.woff2') format('woff2'),
+         url('../fonts/architectsdaughter-webfont.woff') format('woff'),
+         url('../fonts/architectsdaughter-webfont.ttf') format('truetype'),
+         url('../fonts/architectsdaughter-webfont.svg#architects_daughterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
